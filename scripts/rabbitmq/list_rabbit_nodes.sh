@@ -3,7 +3,8 @@
 # https://github.com/jasonmcintosh/rabbitmq-zabbix
 #
 cd "$(dirname "$0")"
-. .rab.auth
+#Use absolute path
+. `pwd`/.rab.auth
 
 if [[ -z "$HOSTNAME" ]]; then
     HOSTNAME=`hostname`
